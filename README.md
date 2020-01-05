@@ -1,9 +1,11 @@
 # thermometer-ATTINY85-Nokia5110LCD-DHT11
 simple thermometer and hygrometer based on ATTINY85/45, Nokia 5110 LCD module and DHT11 sensor
 
-Temperature and Humidity measure from DHT11 connected to PB3
+Temperature and Humidity measurements every 4 seconds, meanwhile power saving mode - works up to 1 month on single battery set
 
-with Nokia LCD 5110 Interface connected to ATTINY85 pins:
+DHT11 - DATA pin connected to PB3 of WTTINY85
+
+Nokia LCD 5110 Interface connected to followinf ATTINY85 pins:
 
 PB0 = RESET
 
