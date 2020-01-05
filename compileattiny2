@@ -1,0 +1,9 @@
+# version for 8MHz clock of ATTINY85
+rm *.elf
+rm *.o
+rm *.hex
+avr-gcc -mmcu=attiny85 -std=gnu99 -Wall -Os -o main2.elf main2.c -w
+avr-objcopy -j .text -j .data -O ihex main2.elf main2.hex
+avr-size --mcu=attiny85 --format=avr main2.elf
+sudo avrdude -c usbasp -p attiny85 -U lfuse:w:0xe2:m  -U flash:w:"main2.hex":a
+
