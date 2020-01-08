@@ -24,3 +24,5 @@ ATTINY85 has factory fusebits - 8 MHz clock with DIV to 1MHz
 "main.c" and "compileatmega" files are for 1MHz clock of ATTINY85/45 ( ultra low power consumption)
 
 "main2.c" and "compileatmega2" files are for 8MHz clock of ATTINY85/45
+
+to see how it works - look here https://www.youtube.com/watch?v=r6nF1iJ2r-M
