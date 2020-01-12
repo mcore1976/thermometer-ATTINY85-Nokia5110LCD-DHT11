@@ -1,7 +1,11 @@
 # thermometer-ATTINY85-Nokia5110LCD-DHT11
 simple thermometer and hygrometer based on ATTINY85/45, Nokia 5110 LCD module and DHT11 or DHT22 sensor
 
-Temperature and Humidity measurements every 4 seconds, meanwhile power saving mode - works up to 1 month on single battery set. The code is 2KB long so it will fit into smaller ATTINY's also.  DHT11 sensor operates within positive temperature area 0 - 50 Celsius degrees ( indoor)  while  DHT22 operates within temperature area  -40 to +80 degrees ( outdoor area). Choose appropriate version of main file for your sensor.
+Temperature and Humidity measurements are done every 4 seconds, meanwhile power saving mode - works up to 1 month on single 2xAA  battery set. 
+The code is 2KB long so it will fit into smaller ATTINY's also (it may fit to ATTINY25 ora ATTINY2313 after some small changes   like not checking CRC from DHT sensor).  
+DHT11 sensor operates within positive temperature area 0 - 50 Celsius degrees ( indoor)  
+while  DHT22 operates within temperature area  -40 to +80 degrees ( outdoor area). 
+Choose appropriate version of main file for your sensor.
 
 DHT11 or DHT22 - DATA pin connected to PB3 of ATTINY85
 
