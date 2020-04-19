@@ -44,8 +44,7 @@ look at this page : http://www.learningaboutelectronics.com/Articles/Program-AVR
 
 The script attached in repository ( "compileatmegaX") can be used to upload data to the chip if you have Linux machine with following packages : "gcc-avr", "binutils-avr" (or sometimes just "binutils"), "avr-libc", "avrdude" and optionally "gdb-avr"(debugger only if you really need it) . 
 For example in Ubuntu download these packages using command : "sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr avrdude". 
-After doing it you will be able to run compilation the script from the directory you have downloaded github files by commands: 
-- "sudo chmod +rx compileattiny" and "sudo ./compileattiny"  (
+After doing it you will be able to run compilation the script from the directory you have downloaded github files by commands: "sudo chmod +rx compileattiny" and "sudo ./compileattiny"  
 
 COMPILATION ON WINDOWS 10 PC :
 
