@@ -21,7 +21,7 @@ PB4 = CLK
 
 GND connected to CS, BL and GND on NOKIA5110 display. Between GND and VCC some small capacitors like 100nF and 10uF should be put for blocking interferences.
 
-the VCC is 3V ( 2xAA battery), but also works with 4.5V (3xAA) battery
+the VCC is 3V ( 2xAA battery) or Solar Cell 4V, it can work with higher voltage like 4.5V (3xAA) battery but it is a bit rysky for LCD 5110 component..
 
 ATTINY85 has factory fusebits - 8 MHz clock with DIV to 1MHz
 
