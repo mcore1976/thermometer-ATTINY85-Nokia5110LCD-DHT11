@@ -34,3 +34,28 @@ ATTINY85 has factory fusebits - 8 MHz clock with DIV to 1MHz
 
 
 to see how it works - look here https://www.youtube.com/watch?v=r6nF1iJ2r-M
+
+------------------------------------------------------------------------------------------------------
+
+COMPILATION ON LINUX PC :
+
+To upload program code to the chip using cheapest USBASP programmer (less than 2 USD on eBay/Aliexpress) 
+look at this page : http://www.learningaboutelectronics.com/Articles/Program-AVR-chip-using-a-USBASP-with-10-pin-cable.php
+
+The script attached in repository ( "compileatmegaX") can be used to upload data to the chip if you have Linux machine with following packages : "gcc-avr", "binutils-avr" (or sometimes just "binutils"), "avr-libc", "avrdude" and optionally "gdb-avr"(debugger only if you really need it) . 
+For example in Ubuntu download these packages using command : "sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr avrdude". 
+After doing it you will be able to run compilation the script from the directory you have downloaded github files by commands: 
+- "sudo chmod +rx compileattiny" and "sudo ./compileattiny"  (
+
+COMPILATION ON WINDOWS 10 PC :
+
+If you have Windows 10 machine - follow this tutorial to download and install full AVR-GCC environment : http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/windows_avr.html
+and use "compileattinyX.bat" files for compilaton in the directory where you have downloaded mainX.c files. You have to be logged as Windows Administrator and run "cmd" from search window to do that. Then use commands like "cd XXXXX" to change working directory to get to downloaded source files.
+
+
+If you are having problems with C code compilation or USBASR programmer you may also look at these tutorials  :  http://www.linuxandubuntu.com/home/setting-up-avr-gcc-toolchain-and-avrdude-to-program-an-avr-development-board-in-ubuntu 
+
+https://blog.podkalicki.com/how-to-compile-and-burn-the-code-to-avr-chip-on-linuxmacosxwindows/  
+
+
+
