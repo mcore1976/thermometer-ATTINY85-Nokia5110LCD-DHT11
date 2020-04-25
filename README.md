@@ -31,6 +31,7 @@ ATTINY85 has factory fusebits - 8 MHz clock with DIV to 1MHz
 
 "main3.c" and "compileatmega3" files are for DHT22 sensor and 1MHz clock of ATTINY85/45 ( ultra low power consumption)
 
+Link to video how to program the chip : https://www.youtube.com/watch?v=7klgyNzZ2TI
 
 
 to see how it works - look here https://www.youtube.com/watch?v=r6nF1iJ2r-M
