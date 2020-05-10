@@ -19,13 +19,13 @@ DHT11 or DHT22 - DATA pin connected to PB3 of ATTINY85
 
 Nokia LCD 5110 Interface connected to following ATTINY85 pins:
 
-PB0 = RESET
+ATTINY85 PB0 = NOKIA5110 RESET
 
-PB1 = DC
+ATTINY85 PB1 = NOKIA5110 DC
 
-PB2 = DIN / DATA IN
+ATTINY85 PB2 = NOKIA5110  DIN / DATA IN
 
-PB4 = CLK
+ATTINY85  PB4 = NOKIA5110 CLK
 
 GND connected to CS, BL and GND on NOKIA5110 display. Between GND and VCC some small capacitors like 100nF and 10uF should be put for blocking interferences.
 
