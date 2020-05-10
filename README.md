@@ -7,6 +7,14 @@ DHT11 sensor operates within positive temperature area 0 - 50 Celsius degrees ( 
 while  DHT22 operates within temperature area  -40 to +80 degrees ( outdoor area). 
 Choose appropriate version of main file for your sensor.
 
+
+to see how it works - look here https://www.youtube.com/watch?v=r6nF1iJ2r-M
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+CONNECTIONS TO BE MADE :
+
 DHT11 or DHT22 - DATA pin connected to PB3 of ATTINY85
 
 Nokia LCD 5110 Interface connected to following ATTINY85 pins:
@@ -23,6 +31,10 @@ GND connected to CS, BL and GND on NOKIA5110 display. Between GND and VCC some s
 
 the VCC is 3V ( 2xAA battery) or Solar Cell 4V, it can work with higher voltage like 4.5V (3xAA) battery but it is a bit rysky for LCD 5110 component..
 
+------------------------------------------------------------------------------------------------------------------------
+
+SOURCE FILE OPTIONS :
+
 ATTINY85 has factory fusebits - 8 MHz clock with DIV to 1MHz
 
 "main.c" and "compileatmega" files are for DHT11 sensor and 1MHz clock of ATTINY85/45 ( ultra low power consumption)
@@ -34,8 +46,6 @@ ATTINY85 has factory fusebits - 8 MHz clock with DIV to 1MHz
 Link to video how to program the chip : https://www.youtube.com/watch?v=7klgyNzZ2TI
 
 
-to see how it works - look here https://www.youtube.com/watch?v=r6nF1iJ2r-M
-
 ------------------------------------------------------------------------------------------------------
 
 COMPILATION ON LINUX PC :
@@ -46,6 +56,8 @@ look at this page : http://www.learningaboutelectronics.com/Articles/Program-AVR
 The script attached in repository ( "compileatmegaX") can be used to upload data to the chip if you have Linux machine with following packages : "gcc-avr", "binutils-avr" (or sometimes just "binutils"), "avr-libc", "avrdude" and optionally "gdb-avr"(debugger only if you really need it) . 
 For example in Ubuntu download these packages using command : "sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr avrdude". 
 After doing it you will be able to run compilation the script from the directory you have downloaded github files by commands: "sudo chmod +rx compileattiny" and "sudo ./compileattiny"  
+
+------------------------------------------------------------------------------------------------------
 
 COMPILATION ON WINDOWS 10 PC :
 
